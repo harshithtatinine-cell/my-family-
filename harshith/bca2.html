@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Me - harshith</title>
+  <style>
+    /* Page background */
+    body {
+      margin: 0;
+      font-family: "Courier New", monospace;
+      background: #f5f7fb;
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Card container to mimic a printable front page */
+    .card {
+      width: 900px;
+      max-width: 95%;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(20,20,60,0.08);
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+      border: 6px solid #0f4c81; /* outer border color */
+    }
+
+    /* Decorative inner border like the example */
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 2px dashed #0f4c81;
+      border-radius: 8px;
+      pointer-events: none;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: 1px;
+      color: #0f4c81;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #333;
+      opacity: 0.9;
+    }
+
+    .content {
+      margin-top: 18px;
+      font-size: 16px;
+      line-height: 1.6;
+      background: rgba(15,76,129,0.03);
+      padding: 18px;
+      border-radius: 6px;
+      border: 1px solid rgba(15,76,129,0.06);
+    }
+
+    .field {
+      margin-bottom: 12px;
+    }
+
+    .field strong { display:inline-block; width:140px; }
+
+    footer {
+      margin-top: 22px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+      opacity: 0.9;
+    }
+
+    /* Print friendly */
+    @media print {
+      body { background: #fff; }
+      .card { box-shadow: none; border: 4px solid #000; }
+      .card::before { border-style: solid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <header>
+      <h1>ABOUT MYSELF</h1>
+     
+    </header>
+
+    <section class="content">
+      <p class="field"><strong>Full name:</strong> Harshith</p>
+      <p class="field"><strong>Native place:</strong> Ballari</p>
+      <p class="field"><strong>Education (PUC):</strong> PUC - Science (Studied at Best College, Ballari)</p>
+      <p class="field"><strong>Current study:</strong> Pursuing BCA I Sem at Kishkinda University</p>
+
+      <hr style="margin:14px 0; border:none; border-top:1px solid rgba(0,0,0,0.06)">
+
+      <p>
+        Hello — my name is <strong>Harshith</strong>. I come from Ballari and completed my PUC (Science)
+        at Best College, Ballari. At present I am pursuing a Bachelor of Computer Applications (BCA)
+        at Kishkinda University. I am passionate about learning programming and computer-related subjects,
+        and I enjoy applying myself to practical projects and problem solving.
+      </p>
+    </section>
+
+    <footer>
+     
+    </footer>
+<img src="h.jpeg" alt="about myself image"></img>
+
+  </div>
+</body>
+</html>
